@@ -1,9 +1,14 @@
 package com.ons.securitylayerJwt.dto;
 
 
-import lombok.Data;
+import lombok.*;
+import lombok.experimental.FieldDefaults;
 
-@Data
+@Setter
+@NoArgsConstructor
+@Getter
+@Builder
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class BearerToken {
 
     private String accessToken ;

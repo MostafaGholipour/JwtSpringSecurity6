@@ -1,4 +1,4 @@
-package com.ons.securitylayerJwt.businessLogic;
+package com.ons.securitylayerJwt.service;
 
 
 import com.ons.securitylayerJwt.dto.LoginDto;

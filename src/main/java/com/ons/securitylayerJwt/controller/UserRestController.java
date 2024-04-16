@@ -1,7 +1,7 @@
-package com.ons.securitylayerJwt.presentation;
+package com.ons.securitylayerJwt.controller;
 
 
-import com.ons.securitylayerJwt.businessLogic.IUserService;
+import com.ons.securitylayerJwt.service.IUserService;
 import com.ons.securitylayerJwt.dto.LoginDto;
 import com.ons.securitylayerJwt.dto.RegisterDto;
 import lombok.RequiredArgsConstructor;

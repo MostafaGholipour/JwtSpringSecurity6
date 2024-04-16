@@ -1,4 +1,4 @@
-package com.ons.securitylayerJwt.businessLogic;
+package com.ons.securitylayerJwt.service;
 
 import com.ons.securitylayerJwt.dto.BearerToken;
 import com.ons.securitylayerJwt.dto.LoginDto;
@@ -6,8 +6,8 @@ import com.ons.securitylayerJwt.dto.RegisterDto;
 import com.ons.securitylayerJwt.models.Role;
 import com.ons.securitylayerJwt.models.RoleName;
 import com.ons.securitylayerJwt.models.User;
-import com.ons.securitylayerJwt.persistence.IRoleRepository;
-import com.ons.securitylayerJwt.persistence.IUserRepository;
+import com.ons.securitylayerJwt.repository.IRoleRepository;
+import com.ons.securitylayerJwt.repository.IUserRepository;
 import com.ons.securitylayerJwt.security.JwtUtilities;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

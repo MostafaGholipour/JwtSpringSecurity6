@@ -1,13 +1,16 @@
 package com.ons.securitylayerJwt.dto;
 
-import lombok.AccessLevel;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.io.Serializable;
 
 
-@Data
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class RegisterDto implements Serializable {
 

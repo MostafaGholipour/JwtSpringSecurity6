@@ -1,4 +1,4 @@
-package com.ons.securitylayerJwt.presentation;
+package com.ons.securitylayerJwt.controller;
 
 
 import lombok.RequiredArgsConstructor;

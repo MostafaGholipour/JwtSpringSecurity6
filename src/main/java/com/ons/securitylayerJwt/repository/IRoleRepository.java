@@ -1,4 +1,4 @@
-package com.ons.securitylayerJwt.persistence;
+package com.ons.securitylayerJwt.repository;
 
 import com.ons.securitylayerJwt.models.Role;
 import com.ons.securitylayerJwt.models.RoleName;
