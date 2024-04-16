@@ -15,29 +15,30 @@ import java.util.*;
 @Getter
 @Setter
 @AllArgsConstructor
-@ToString
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class User implements Serializable , UserDetails {
+public class User implements Serializable, UserDetails {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Integer id ;
-    String firstName ;
-    String lastName ;
+    Integer id;
+    String firstName;
+    String lastName;
     String email;
-    String password ;
+    String password;
 
     //Un utilisateur peut avoir plusieurs roles
-    @ManyToMany(fetch = FetchType.EAGER  , cascade = CascadeType.PERSIST)
-    List <Role> roles ;
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    List<Role> roles;
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    List<Url> urls;
 
-
-    public User (String email , String password , List<Role> roles) {
-      this.email= email ;
-      this.password=password ;
-      this.roles=roles ;}
+    public User(String email, String password, List<Role> roles) {
+        this.email = email;
+        this.password = password;
+        this.roles = roles;
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

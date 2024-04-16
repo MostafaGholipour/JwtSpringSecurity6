@@ -6,6 +6,7 @@ import lombok.experimental.FieldDefaults;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.io.Serializable;
+import java.util.List;
 
 
 @Entity
@@ -22,6 +23,8 @@ public class Role implements Serializable  {
     Integer id ;
     @Enumerated(EnumType.STRING)
     RoleName roleName ;
+    @ManyToMany(fetch = FetchType.EAGER  , cascade = CascadeType.PERSIST)
+    List<Url> urls;
 
     public Role (RoleName roleName) {this.roleName = roleName;}
     public String getRoleName() {
