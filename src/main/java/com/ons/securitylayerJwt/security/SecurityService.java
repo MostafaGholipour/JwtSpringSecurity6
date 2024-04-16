@@ -1,4 +1,4 @@
-package com.ons.securitylayerJwt.security.A;
+package com.ons.securitylayerJwt.security;
 
 public interface SecurityService {
 //    boolean isAuthenticated(String role,String url);

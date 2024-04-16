@@ -1,4 +1,4 @@
-package com.ons.securitylayerJwt.security.A;
+package com.ons.securitylayerJwt.security;
 
 import com.ons.securitylayerJwt.models.Url;
 import com.ons.securitylayerJwt.models.User;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component("SecurityServiceImpel")
-public class SecurityServiceImpl implements com.ons.securitylayerJwt.security.A.SecurityService {
+public class SecurityServiceImpl implements SecurityService {
     @Autowired
     private UserRepository userRepository;
     @Autowired
@@ -26,7 +26,6 @@ public class SecurityServiceImpl implements com.ons.securitylayerJwt.security.A.
         List<Url> urls = new ArrayList<>();
         user.getRoles().forEach(r->urls.addAll(r.getUrls()));
         urls.addAll(user.getUrls());
-        System.out.println("List Size : "+urls.size());
        return urls.contains(access);
     }
 

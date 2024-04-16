@@ -1,5 +1,6 @@
-package com.ons.securitylayerJwt.security;
+package com.ons.securitylayerJwt.security.jwt;
 
+import com.ons.securitylayerJwt.security.CustomerUserDetailsService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

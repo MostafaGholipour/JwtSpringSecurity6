@@ -1,5 +1,4 @@
-package com.ons.securitylayerJwt.security;
-
+package com.ons.securitylayerJwt.security.jwt;
 
 
 import io.jsonwebtoken.*;

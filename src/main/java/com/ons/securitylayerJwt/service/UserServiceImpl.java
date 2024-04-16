@@ -8,7 +8,7 @@ import com.ons.securitylayerJwt.models.RoleName;
 import com.ons.securitylayerJwt.models.User;
 import com.ons.securitylayerJwt.repository.RoleRepository;
 import com.ons.securitylayerJwt.repository.UserRepository;
-import com.ons.securitylayerJwt.security.JwtUtilities;
+import com.ons.securitylayerJwt.security.jwt.JwtUtilities;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
